@@ -1,0 +1,84 @@
+section{
+    margin:0;
+    padding: 0;
+    padding-top: 100px;
+    height: 100vh;
+    background-color: #dbead5;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+}
+section#animes{
+    width: 100%;
+    padding: 5% 0;
+    background-color: #222;
+    padding: 0;
+    margin:0;
+    display: table;
+}
+
+section h1{
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    color: ;
+}
+
+section#animes div{
+    padding: 0;
+    vertical-align: middle;
+    color: #fff;
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 800px){
+    section h1
+    {
+        margin-top: 10%;
+        font-size: 2em;
+        display: none;
+    }
+}
+@media screen and (min-width: 800px){
+
+    .wrapper {
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .wraper a
+    {
+        display: inline;
+    }
+
+    section#animes img{
+        width: 200px;
+        margin:  0 2% 1% 0;
+        float:left;
+        -webkit-filter: grayscale(80%);
+        filter: grayscale(80%);
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    section#animes img:hover{
+        width: 199px;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        margin:  0 2% 1% 0;
+        float:left;
+    }
+}

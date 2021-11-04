@@ -1,0 +1,56 @@
+body {
+    background-color: #dbead5; 
+}
+
+.imagem {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+.biografia {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+table {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif:hover {
+    filter: brightness(1.5);
+}
+
+img {
+    transition: all 0.3s;
+    border-radius: 1rem;
+}
+
+img:hover {
+    filter: blur(1.8);
+    transform:scale(1.2);
+}

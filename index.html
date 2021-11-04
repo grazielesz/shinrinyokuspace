@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="op.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com///ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Shinrinyoku space.</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        var docWidth = $("body").width(),
+        docHeight = $('body').height(),
+          wrap = $("#wrap"),
+          images = $("#wrap .hb"),
+          slidesWidth = wrap.width(),
+          slidesHeight = wrap.height();
+
+        $(window).on("resize", function () {
+          docWidth = $("body").width();
+          docHeight = $("body").height();
+          slidesWidth = wrap.width();
+          slidesHeight = wrap.height();
+        });
+
+        $(document).mousemove(function (e) {
+          if(innerWidth > 600) {
+            var mouseX = e.pageX,
+            offset = (mouseX / docWidth) * slidesWidth - mouseX / 2;
+  
+            images.css({
+              "-webkit-transform": `translate3d(${-offset}px,0,0)`,
+              transform: `translate3d(${-offset}px,0,0)`,
+            });
+          } else {
+            
+            var mouseY = e.pageY,
+            offset = (mouseY / docHeight) * slidesWidth - mouseY / 2;
+
+            offset = (offset - 50) * 10;
+
+            images.css({
+              "-webkit-transform": `translate3d(0 , ${-offset}px,0)`,
+              transform: `translate3d(0, ${-offset}px,0)`,
+            });
+          }
+        });
+      });
+    </script>
+    <div id="wrap">
+      <a href="banners/animes.html" class="hb">
+        <div class="c">
+          <img src="anime.png" alt="" />
+          <div class="txt">
+            <h1>ANIMES</h1>
+            <p>Anime da imagem: Violet Evergarden</p>
+          </div>
+        </div>
+      </a>
+      <div class="fullBg">
+        <img src="anime.png" alt="" />
+      </div>
+      <a href="banners/mangas.html" class="hb">
+        <div class="c">
+          <img src="manga.png" alt="" />
+          <div class="txt">
+            <h1>MANGAS</h1>
+            <p>Manga/anime da imagem: Attack on Titan.</p>
+          </div>
+        </div>
+      </a>
+      <div class="fullBg">
+        <img src="manga.png" alt="" />
+      </div>
+      <a href="banners/filmes.html" class="hb">
+        <div class="c">
+          <img src="filme.png" alt="" />
+          <div class="txt">
+            <h1>FILMES</h1>
+            <p>Filme da capa: A Viagem de Chihiro</p>
+          </div>
+        </div>
+      </a>
+      <div class="fullBg">
+        <img src="filme.png" alt="" />
+      </div>
+      <a href="banners/recomendation.html" class="hb">
+        <div class="c">
+          <img src="recomend.png" alt="" />
+          <div class="txt">
+            <h1>RECOMENDADOS</h1>
+            <p>Os animes preferidos das adm!</p>
+          </div>
+        </div>
+      </a>
+      <div class="fullBg">
+        <img src="recomend.png" alt="" />
+      </div>
+    </div>
+    <header>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="#" target="_blank"><li>home</li></a>
+            <a href="https://onepieceex.net"><li>mais sobre one piece</li></a>
+            <a href="https://jojo-portal.com/"><li>mais sobre jojo</li></a>
+            <a href="http://www.naruto.com/j/"><li>mais sobre naruto</li></a>
+            <a href="http://www.dragonballz.com/"><li>mais sobre dragonballz</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <footer>
+      <a href="#" class="credits"
+        >projeto feito por graziele, karina e vithória</a
+      >
+    </footer>
+  </body>
+</html>
