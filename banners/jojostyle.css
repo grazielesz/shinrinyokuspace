@@ -1,0 +1,133 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  height: 400px;
+  width: 650px;
+}
+
+img:hover{
+  filter: brightness(50%);
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-decoration: none;
+  font-size: 20px;
+  text-align: justify; 
+  margin: 100px;
+}
+
+p:hover {
+  color: white;
+}
+
+h1 {
+  margin: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  margin: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.parte1 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte1:hover {
+  background-color:#ffebe9;
+  margin: 40px;
+}
+
+.parte2 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte2:hover {
+  background-color:#fad1c3	;
+  margin: 40px;
+}
+
+.parte3 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte3:hover {
+  background-color: #ffd2c0	;
+  margin: 40px;
+}
+
+.parte4 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte4:hover {
+  background-color: #fad8ed	;
+  margin: 40px;
+}
+
+.parte5 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte5:hover {
+  background-color: #e79e9e	;
+  margin:40px;
+}
+
+.parte6 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte6:hover {
+  background-color: #eeaeb8	;
+  margin:40px;
+}
+
+.parte7 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte7:hover {
+  background-color: #eea7a7		;
+  margin:40px;
+}
+
+.parte8 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte8:hover {
+  background-color: #ffc4d8	;
+  margin:40px;
+}
+
+.parte9 {
+  background-color: white;
+  margin: 40px;
+}
+
+.parte9:hover {
+  background-color: #ffe2ff			;
+  margin:40px;
+}
